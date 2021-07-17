@@ -11,6 +11,11 @@ body
     width: 90%;
 }
 
+h1
+{
+    font-size: large;
+}
+
 /* En-tête */
 
 header
@@ -19,6 +24,7 @@ header
     justify-content: space-between;
     align-items: flex-end;
     margin-top: 20px;
+    margin-bottom: 30px;
 }
 
 /* Navigation */
@@ -52,4 +58,60 @@ nav a
 nav a:hover
 {
     border-top: 2px solid;
+}
+
+/* Partie recherche et filtre */
+
+h1, .sous_titresearch
+{
+    margin: 0;
+    padding: 0;
+}
+
+.sous_titresearch
+{
+    font-size: small;
+}
+
+.searchbox
+{
+    margin-top: 10px;
+    display: inline-flex;
+    height: 40px;
+    width: 300px;
+}
+
+.searchformicon
+{
+    background-color: #F2F2F2;
+    padding: 3%;
+    width: 20px;
+    border-radius: 1rem 0 0 1rem;
+    text-align: center;
+}
+
+.searchformtext
+{
+    border-right: none;
+    border-left: none;
+    border-top: #F2F2F2 1px solid;
+    border-bottom: #F2F2F2 1px solid;
+    padding: 0 3%;
+    width: 180px;
+    box-sizing: border-box;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #00000069;
+}
+
+.searchformbutton
+{
+    background-color: #0065FC;
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 0 1rem 1rem 0;
+    padding: 0 1.5rem;
+    font-size: 1rem;
+    cursor: pointer;
 }
