@@ -7,4 +7,49 @@
 body
 {
 	font-family: 'Raleway', 'Arial Black', Impact, serif;
+    margin: auto;
+    width: 90%;
+}
+
+/* En-tête */
+
+header
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-top: 20px;
+}
+
+/* Navigation */
+
+nav ul
+{
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around; 
+}
+
+nav a.navlinkcenter 
+{
+    color: #7e7c7c;
+}
+
+nav a, a:hover, a:visited
+{
+    color: #0065FC;
+}
+
+nav a
+{
+	padding: 2rem;
+  	font-weight: 500;
+  	text-align: center;
+    text-decoration: none;
+}
+
+nav a:hover
+{
+    border-top: 2px solid;
 }
