@@ -41,7 +41,7 @@
             <!-- Le bloc Recherche et Filtre -->
             <section>
                 <h1>Trouvez votre hébegement pour des vacances de rêve</h1>
-                <p class="sous_titresearch">En plein centre ville ou en pleine nature</p>
+                <p class="textsmall">En plein centre ville ou en pleine nature</p>
 
                 <!-- Partie recherche -->
                 <form method="post" action="traitement.php" class="searchbox">
@@ -55,28 +55,44 @@
 
                 <!-- Partie filtre -->
                 <div id="filtres">
-                    <h2>Filtres</h2>
-                    <div id="filtres_economique">
-                        <i class="fas fa-money-bill-wave searchFiltersFilterWrapiconIcon"></i> Économique
-                    </div>
+                    <h3 class="filtrestitle">Filtres</h3>
+                    <div class="filtrescorps">
+                        <div class="filtresico">
+                            <div class="filtresicon">
+                                <i class="fas fa-money-bill-wave filtresiconicon"></i>  
+                            </div>
+                            <span class="filtrestext">Économique </span>
+                        </div>
 
-                    <div>
-                        <i class="fas fa-child searchFiltersFilterWrapiconIcon"></i> Familial
-                    </div>
+                        <div class="filtresico">
+                            <div class="filtresicon">
+                                <i class="fas fa-child filtresiconicon"></i> 
+                            </div>
+                            <span class="filtrestext">Familial</span>
+                        </div>
 
-                    <div>
-                        <i class="fas fa-heart searchFiltersFilterWrapiconIcon"></i> Romantique
-                    </div>
+                        <div class="filtresico">
+                            <div class="filtresicon">
+                                <i class="fas fa-heart filtresiconicon"></i> 
+                            </div>
+                            <span class="filtrestext">Romantique</span>
+                        </div>
 
-                    <div>
-                        <i class="fas fa-dog searchFiltersFilterWrapiconIcon"></i> Animaux autorisés
+                        <div class="filtresico">
+                            <div class="filtresicon">
+                                <i class="fas fa-dog filtresiconicon"></i>
+                            </div> 
+                            <span class="filtrestext">Animaux autorisés</span>
+                        </div>
                     </div>
                 </div>
                 <!-- Fin de la partie filtre -->
 
                 <div id="information">
-                    <i class="fas fa-info searchResultWrapiconIcon"></i>
-                    <p>Plus de 500 logements sont disponibles dans cette ville</p>
+                    <div class="infoicon">
+                        <i class="fas fa-info filtresiconicon"></i>
+                    </div>
+                    <p class="textsmall">Plus de 500 logements sont disponibles dans cette ville</p>
                 </div>
             </section>
             <!-- Fin du bloc recherche et filtre -->
