@@ -11,6 +11,12 @@ body
     width: 90%;
 }
 
+h1, .sous_titresearch
+{
+    margin: 0;
+    padding: 0;
+}
+
 h1
 {
     font-size: large;
@@ -18,33 +24,39 @@ h1
 
 /* En-tête */
 
-header
+header, nav ul, #filtres, .filtrescorps, .filtresico, .filtresicon, #information, .infoicon
 {
     display: flex;
-    justify-content: space-between;
-    align-items: flex-end;
+}
+
+header
+{
     margin-top: 20px;
     margin-bottom: 30px;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+nav ul, .filtrescorps
+{
+    justify-content: space-around;
 }
 
 /* Navigation */
 
+nav a, a:hover, a:visited
+{
+    color: #0065FC;
+}
+
 nav ul
 {
     list-style-type: none;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around; 
 }
 
 nav a.navlinkcenter 
 {
     color: #7e7c7c;
-}
-
-nav a, a:hover, a:visited
-{
-    color: #0065FC;
 }
 
 nav a
@@ -62,13 +74,12 @@ nav a:hover
 
 /* Partie recherche et filtre */
 
-h1, .sous_titresearch
+.searchformbutton, .filtresico
 {
-    margin: 0;
-    padding: 0;
+    cursor: pointer;
 }
 
-.sous_titresearch
+.textsmall
 {
     font-size: small;
 }
@@ -76,9 +87,9 @@ h1, .sous_titresearch
 .searchbox
 {
     margin-top: 10px;
-    display: inline-flex;
     height: 40px;
     width: 300px;
+    display: inline-flex;
 }
 
 .searchformicon
@@ -90,6 +101,11 @@ h1, .sous_titresearch
     text-align: center;
 }
 
+.searchformbutton, .searchformtext
+{
+    font-size: 1rem;
+}
+
 .searchformtext
 {
     border-right: none;
@@ -99,19 +115,74 @@ h1, .sous_titresearch
     padding: 0 3%;
     width: 180px;
     box-sizing: border-box;
-    font-size: 1rem;
     font-weight: bold;
-    color: #00000069;
+    color: black;
 }
 
 .searchformbutton
 {
-    background-color: #0065FC;
     color: white;
     font-weight: bold;
     border: none;
     border-radius: 0 1rem 1rem 0;
     padding: 0 1.5rem;
-    font-size: 1rem;
-    cursor: pointer;
+    background-color: #0065FC;
+}
+
+#filtres, .filtrescorps, .filtresico, .filtresicon, #information, .infoicon
+{
+    align-items: center;
+}
+
+#filtres
+{
+    margin-top: 20px;
+}
+
+.filtrescorps
+{
+    margin-left: 10px;
+    height: 40px;
+    width: 800px;
+}
+
+.filtresico
+{
+    border: 2px solid #d9d9d9;
+    border-radius: 2rem;
+}
+
+.filtresico:hover
+{
+    text-shadow:0 0 3px black;
+    color:black;
+    background-color:#DEEBFF;
+}
+
+.filtresicon, .infoicon
+{
+    border-radius: 100%;
+    justify-content: center;
+    color: #0065FC;
+}
+
+.filtresicon
+{
+    background-color: #DEEBFF;
+    height: 1.9rem;
+    width: 1.9rem;
+}
+
+.filtrestext
+{
+     margin: 0 1rem;
+}
+
+.infoicon
+{
+    background-color: white;
+    border: 1px solid #0065FC;
+    height: 1.2rem;
+    width: 1.2rem;
+    margin-right: 10px;
 }
