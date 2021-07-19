@@ -8,10 +8,10 @@ body
 {
 	font-family: 'Raleway', 'Arial Black', Impact, serif;
     margin: auto;
-    width: 90%;
+    width: 95%;
 }
 
-h1, .sous_titresearch
+h1, h3, .sous_titresearch, .figurelink, .figurelinkaside
 {
     margin: 0;
     padding: 0;
@@ -22,18 +22,28 @@ h1
     font-size: large;
 }
 
+a
+{
+    text-decoration: none;
+    color: inherit;
+}
+
 /* En-tête */
 
-header, nav ul, #filtres, .filtrescorps, .filtresico, .filtresicon, #information, .infoicon
+header, nav ul, #filtres, .filtrescorps, .filtresico, .filtresicon, #information, .infoicon, .hosting, .articlelink, .asidehosting, .assidetitle, .popularbox
 {
     display: flex;
+}
+
+header, .assidetitle
+{
+    justify-content: space-between;
 }
 
 header
 {
     margin-top: 20px;
     margin-bottom: 30px;
-    justify-content: space-between;
     align-items: flex-end;
 }
 
@@ -44,7 +54,7 @@ nav ul, .filtrescorps
 
 /* Navigation */
 
-nav a, a:hover, a:visited
+nav a, a:hover, a:visited, .star_true
 {
     color: #0065FC;
 }
@@ -74,7 +84,7 @@ nav a:hover
 
 /* Partie recherche et filtre */
 
-.searchformbutton, .filtresico
+.searchformbutton, .filtresico, .articlehosting
 {
     cursor: pointer;
 }
@@ -186,3 +196,119 @@ nav a:hover
     width: 1.2rem;
     margin-right: 10px;
 }
+
+/* Partie hébergements */
+
+.hosting
+{
+    margin-top: 1rem;
+}
+
+.grouplink, .asidehosting
+{
+    background-color: #F2F2F2;
+}
+
+.grouplink, .asidehosting, .articlehostingimg
+{
+    border-radius: 1rem;
+}
+
+.grouplink
+{
+    width: 70%;
+    margin-right: 2rem;
+}
+
+.hebergement_title, .affplus, .articlehosting
+{
+    margin-left: 1rem;
+}
+
+.articlelink
+{
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+
+.articlehosting, .articlehostingaside
+{
+    background-color: white;
+    border-radius: 1.25rem;
+    margin-right: 1rem;
+    margin-bottom: 1rem;
+    padding: 0.4rem;
+}
+
+.articlehosting
+{
+    width: 280.8px;
+    height: 260px;
+}
+
+.articlehostingimg
+{
+    width: 280px;
+    height: 180px;
+    transform: scale(1);
+    transition: .3s ease-in-out;
+}
+
+.articlehostingimg:hover
+{
+    transform: scale(1.3);
+}
+
+.infotext
+{
+    margin: 0.25rem;
+}
+
+.star_false
+{
+    color: #F2F2F2;
+}
+
+/* Partie aside */
+
+.asidehosting
+{
+    flex-direction: column;
+}
+
+.assidetitle
+{
+    margin: 1rem;
+}
+
+.articlehostingaside
+{
+    width: 350px;
+    height: 182px;
+    margin-right: 2rem;
+    margin-left: 2rem;
+}
+
+.figurelinkaside
+{
+    overflow: hidden;
+    width: 220px;
+    height: 180px;
+}
+
+.infotextaside, .asidestar
+{
+    margin-left: 0.5rem;
+}
+
+.infotextaside
+{
+    margin-top: 0.25rem;
+}
+
+.asidestar
+{
+    margin-top: 80px;
+}
+
+/* Partie activité */
