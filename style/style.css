@@ -6,8 +6,11 @@
 
 body {
 	font-family: 'Raleway', 'Arial Black', Impact, serif;
-    margin: auto;
-    width: 95%;
+}
+
+.site_corps {
+	width: 96%;
+	margin: auto;
 }
 
 h1{
@@ -306,4 +309,30 @@ nav a.nav_link-active {
 	flex-wrap: wrap;
     justify-content: flex-start;
     align-items: flex-start;
+}
+
+/* Footer ou Pieds-de-page */
+
+footer {
+	display: flex;
+	justify-content: flex-start;
+	background-color: #F2F2F2;
+	height: 220px;
+}
+
+.footer_box {
+	display: flex;
+	flex-direction: column;
+	margin-top: 30px;
+	margin-left: 30px;
+	margin-right: 200px;
+}
+
+.footer_box-link {
+	text-decoration: none;
+	margin-top: 10px;
+}
+
+.footer_box-link-title {
+	color: black;
 }
